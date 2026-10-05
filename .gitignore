@@ -1,0 +1,17 @@
+# logs do servidor local (php -S) e sobras
+_server.out.log
+_server.err.log
+
+# sistema operacional / editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# nada disso deve entrar no repo
+node_modules/
+.env
+.env.*
+*.tmp

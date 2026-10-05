@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jussielson Júnior Xavier Ribeiro — Desenvolvedor</title>
+<meta name="description" content="Portfólio de Jussielson Júnior Xavier Ribeiro — Técnico em Informática e estudante de Engenharia da Computação, estagiário de TI na SEDUC/COTIC (Governo de Rondônia). Desenvolvimento de sistemas internos governamentais, HTML, CSS, JavaScript, PHP, React/JSX, MySQL e infraestrutura.">
+<meta name="author" content="Jussielson Júnior Xavier Ribeiro">
+<meta name="theme-color" content="#0f172a">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jussielson Júnior Xavier Ribeiro — Desenvolvedor">
+<meta property="og:description" content="Desenvolvimento de sistemas internos governamentais na SEDUC/COTIC e suporte à infraestrutura tecnológica.">
+
+<script>
+  // Aplica o tema antes de a página pintar (evita piscar na cor errada).
+  (function () {
+    try {
+      var t = localStorage.getItem('tema-portfolio');
+      if (t !== 'escuro' && t !== 'claro') t = 'escuro';   // escuro é o padrão
+      document.documentElement.setAttribute('data-tema', t);
+    } catch (e) {
+      document.documentElement.setAttribute('data-tema', 'escuro');
+    }
+  })();
+</script>
+
+<!-- v=5 força o navegador a pegar a versão nova em vez do cache -->
+<link rel="stylesheet" href="styles.css?v=6">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='system-ui'>💼</text></svg>">
+</head>
+<body>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="container topo-inner">
+    <span class="topo-lado" aria-hidden="true"></span>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato" class="btn-contato">Contato</a>
+    </nav>
+
+    <div class="topo-acoes">
+      <button class="tema-btn" id="tema-btn" type="button"
+              aria-label="Mudar para tema escuro" title="Alternar tema claro/escuro">
+        <svg class="icone-sol" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/>
+        </svg>
+        <svg class="icone-lua" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>
+        </svg>
+      </button>
+
+      <button class="menu-btn" type="button" aria-label="Abrir menu"
+              aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Navegação (mobile)">
+    <a href="#sobre">Sobre</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#formacao">Formação</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="topo">
+    <div class="container hero-inner">
+
+      <div class="hero-foto">
+        <img src="perfil.jpg" width="400" height="400"
+             alt="Foto de Jussielson Júnior Xavier Ribeiro"
+             onerror="this.parentNode.style.display='none'">
+      </div>
+
+      <div class="hero-texto">
+        <p class="hero-selo">Disponível para oportunidades como desenvolvedor</p>
+        <h1 class="hero-titulo">
+          Jussielson Júnior<br><span class="destaque">Xavier Ribeiro</span>
+        </h1>
+        <p class="hero-subtitulo">
+          Técnico em Informática e estudante de Engenharia da Computação.
+          Desenvolvo <strong>sistemas internos governamentais</strong> e dou suporte
+          à infraestrutura tecnológica na
+          <strong>Coordenadoria de Tecnologia da Informação e Comunicação (COTIC/SEDUC)</strong>
+          do Governo do Estado de Rondônia.
+        </p>
+
+        <div class="hero-info">
+          <span class="pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Porto Velho, Rondônia
+          </span>
+          <span class="pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+            jussielsonjuniorofc@gmail.com
+          </span>
+          <span class="pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.6 4-2 1.4a13 13 0 0 0 6.4 6.4l1.4-2 4 1.6v3c0 1.1-.9 2-2 2C10.4 19.4 4.6 13.6 4.6 6.2c0-1.8.9-3.2 2-3.2z"/></svg>
+            (69) 99309-6761
+          </span>
+        </div>
+
+        <div class="hero-acoes">
+          <a class="btn btn-whatsapp"
+             href="https://wa.me/5569993096761?text=Ol%C3%A1%2C%20Jussielson!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20como%20desenvolvedor."
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 0 1 12 4zm-3.3 4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 3 4.5 4.1 2.2.9 2.7.7 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.7-.3-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.2-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4z"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a class="btn btn-email" href="mailto:jussielsonjuniorofc@gmail.com?subject=Oportunidade%20como%20desenvolvedor">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+            Enviar e-mail
+          </a>
+          <a class="btn btn-ghost" href="#experiencia">Ver experiência</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OBJETIVO ─────────────────────────────────────────── -->
+  <section class="secao" id="sobre">
+    <div class="container">
+      <div class="grade-2">
+        <div>
+          <p class="rotulo">Objetivo</p>
+          <h2 class="titulo-secao">Quero crescer como desenvolvedor</h2>
+          <p class="texto">
+            Atuar como desenvolvedor para desenvolver minhas habilidades e estou
+            disposto a aprender novos conhecimentos.
+          </p>
+          <p class="texto">
+            Busco uma oportunidade para aplicar o que já faço no serviço público
+            — sistemas internos que usam de verdade — em um time de
+            desenvolvimento, aprendendo a construir software com padrão de
+            mercado.
+          </p>
+        </div>
+        <div class="card card-destaque">
+          <p class="rotulo">Resumo profissional</p>
+          <p class="texto">
+            Sou formado como <strong>Técnico em Informática</strong> e estudante de
+            <strong>Engenharia da Computação</strong>, atuando como
+            <strong>Estagiário de TI</strong> no Governo do Estado de Rondônia
+            (SEDUC – COTIC). Tenho perfil cooperativo e orientado a resultados,
+            com experiência no desenvolvimento de sistemas internos
+            governamentais e suporte à infraestrutura tecnológica.
+          </p>
+          <ul class="marcadores">
+            <li>Sistemas web internos usados pela rede de educação do estado</li>
+            <li>Suporte técnico e manutenção de infraestrutura</li>
+            <li>Formação técnica em informática (1.200 horas) + engenharia cursando</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIÊNCIA ─────────────────────────────────────── -->
+  <section class="secao secao-alt" id="experiencia">
+    <div class="container">
+      <p class="rotulo">Experiência profissional</p>
+      <h2 class="titulo-secao">Onde já atuei</h2>
+
+      <article class="card cargo">
+        <header class="cargo-topo">
+          <div>
+            <h3 class="cargo-titulo">Estagiário de TI</h3>
+            <p class="cargo-org">
+              Governo do Estado de Rondônia — SEDUC / COTIC
+              <span class="cargo-local">· Porto Velho, RO</span>
+            </p>
+          </div>
+          <p class="cargo-periodo">Janeiro de 2026 — o momento</p>
+        </header>
+
+        <ul class="marcadores">
+          <li>Lotado na Coordenadoria de Tecnologia da Informação e Comunicação (COTIC).</li>
+          <li>Atuação como suporte técnico aos usuários da Secretaria de Educação.</li>
+          <li>
+            <strong>Desenvolvimento de sistemas web internos</strong> usados pela
+            administração da rede de ensino do estado.
+          </li>
+          <li>Suporte à infraestrutura tecnológica: manutenção de equipamentos, rede e servidores.</li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag tag-forte">Sistemas internos governamentais</span>
+          <span class="tag tag-forte">Desenvolvimento web</span>
+          <span class="tag">Suporte técnico</span>
+          <span class="tag">Infraestrutura</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── FORMAÇÃO ─────────────────────────────────────────── -->
+  <section class="secao" id="formacao">
+    <div class="container">
+      <p class="rotulo">Formação acadêmica</p>
+      <h2 class="titulo-secao">Estudo</h2>
+
+      <div class="grade-2">
+        <article class="card">
+          <h3 class="card-titulo">Bacharelado em Engenharia da Computação</h3>
+          <p class="card-meta">Faculdade Sapiens · Fevereiro de 2026 — cursando</p>
+        </article>
+        <article class="card">
+          <h3 class="card-titulo">Ensino Técnico em Informática</h3>
+          <p class="card-meta">
+            Instituto Estadual de Desenvolvimento da Educação Profissional de Rondônia
+            · Maio de 2024 — Setembro de 2025
+          </p>
+          <p class="nota">Curso técnico de 1.200 horas.</p>
+        </article>
+      </div>
+
+      <article class="card idioma-card">
+        <h3 class="card-titulo">Idiomas</h3>
+        <p class="texto">
+          Inglês — nível intermediário, por aprendizado autodidata.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── HABILIDADES ──────────────────────────────────────── -->
+  <section class="secao secao-alt" id="habilidades">
+    <div class="container">
+      <p class="rotulo">Habilidades e competências</p>
+      <h2 class="titulo-secao">O que eu uso</h2>
+
+      <div class="grade-3">
+        <article class="card">
+          <h3 class="card-titulo card-titulo-icone">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+            Desenvolvimento
+          </h3>
+          <ul class="chips">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            <li>PHP</li><li>Tailwind CSS</li><li>JSX</li><li>JSON</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card-titulo card-titulo-icone">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg>
+            Banco de dados &amp; ferramentas
+          </h3>
+          <ul class="chips">
+            <li>DBeaver</li><li>GLPI</li><li>Git</li>
+            <li>Visual Studio Code</li><li>Claude Code</li><li>Codex</li>
+          </ul>
+          <p class="nota">Experiência com agentes de IA no desenvolvimento.</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-titulo card-titulo-icone">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg>
+            Infraestrutura &amp; sistemas
+          </h3>
+          <ul class="chips">
+            <li>Windows Server</li><li>Virtualização (Hyper-V)</li>
+            <li>Redes de computadores</li><li>Suporte técnico</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTATO ──────────────────────────────────────────── -->
+  <section class="secao" id="contato">
+    <div class="container">
+      <div class="contato">
+        <p class="rotulo">Contato</p>
+        <h2 class="titulo-secao">Vamos conversar</h2>
+        <p class="texto texto-grande">
+          Se sua equipe precisa de alguém para desenvolver e manter sistemas
+          internos, estou pronto para começar e aprender com o time.
+        </p>
+
+        <div class="contato-botoes">
+          <a class="btn btn-whatsapp btn-grande"
+             href="https://wa.me/5569993096761?text=Ol%C3%A1%2C%20Jussielson!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%20como%20desenvolvedor."
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 0 1 12 4z"/></svg>
+            (69) 99309-6761
+          </a>
+          <a class="btn btn-email btn-grande" href="mailto:jussielsonjuniorofc@gmail.com?subject=Oportunidade%20como%20desenvolvedor">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+            jussielsonjuniorofc@gmail.com
+          </a>
+          <a class="btn btn-ghost btn-grande" href="https://www.linkedin.com/in/jussielson-ribeiro-4b2478314/"
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM3 9h3v12H3zM9 9h2.8v1.7h.1c.4-.8 1.4-1.7 2.9-1.7 3.1 0 3.7 2 3.7 4.6V21h-3v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21H9z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container rodape-inner">
+    <p>© <span id="ano">2026</span> Jussielson Júnior Xavier Ribeiro — Desenvolvedor · Porto Velho, RO</p>
+  </div>
+</footer>
+
+<script src="script.js?v=6"></script>
+</body>
+</html>
