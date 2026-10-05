@@ -1,0 +1,6 @@
+chore: robots.txt, sitemap.xml e verificador do portfólio
+
+- robots.txt e sitemap.xml apontando para https://jussielson.vercel.app
+- tools/verificar.mjs: confere conteúdo do CV, contatos, metadados,
+  acessibilidade, recursos técnicos, arquivos de deploy e encoding.
+  Rode com: node tools/verificar.mjs
