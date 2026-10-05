@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="JR — Jussielson Ribeiro">
+  <defs>
+    <linearGradient id="marcaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#marcaGrad)"/>
+  <text x="256" y="342" text-anchor="middle"
+        font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="238" font-weight="700" letter-spacing="-8" fill="#ffffff">JR</text>
+</svg>
