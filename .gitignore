@@ -15,3 +15,8 @@ node_modules/
 .env
 .env.*
 *.tmp
+
+.vercel
+
+# vinculo local com a conta Vercel (nao versionar)
+.vercel/
